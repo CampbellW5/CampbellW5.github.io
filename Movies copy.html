@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 10 Movies of All-Time</title>
+
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+<style>
+.athletesBanner {
+position: fixed; 
+margin-left: auto;
+margin-right: auto;
+left: -6%;
+right: 0px;
+top: 0.7vw; 
+width: 0px;
+height: auto; 
+text-align: center;
+z-index:1005;
+font-size: 1.35vw;
+font-family: Verdana;
+}
+
+.moviesBanner {
+position: fixed; 
+margin-left: auto;
+margin-right: auto;
+left: 89.5%;
+right: 0px;
+top: 0.7vw; 
+width: 0px; 
+height: auto; 
+text-align: center;
+z-index:1005;
+font-size: 1.35vw;
+font-family: Verdana;
+}
+
+.animalsBanner {
+position: fixed; 
+margin-left: auto;
+margin-right: auto;
+left: 42%;
+right: 0px;
+top: 0.7vw; 
+width: 0px;
+height: auto; 
+text-align: center;
+z-index:1005;
+font-size: 1.35vw;
+font-family: Verdana;
+}
+
+.citiesBanner {
+position: fixed; 
+margin-left: auto;
+margin-right: auto;
+left: -50%;
+right: 0px;
+top: 0.7vw; 
+width: 0px; 
+height: auto; 
+text-align: center;
+z-index:1005;
+font-size: 1.35vw;
+font-family: Verdana;
+}
+
+a:link, a:visited {
+color: white;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: black;
+text-decoration: none;
+}
+
+h1 {
+position: absolute; 
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 7vw; 
+width: 100%; 
+height: auto; 
+text-align: center;
+z-index:950;
+font-size: 2.5vw;
+font-family: Verdana;
+color: white;
+}
+
+.hacksawRidgeTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 14vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.hacksawRidgePicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 18.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.greenBookTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 52vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.greenBookPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 56.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.djangoUnchainedTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 90vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.djangoUnchainedPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 94.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.parasiteTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 128vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.parasitePicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 132.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.interstellarTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 166vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.interstellarPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 170.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.schindlersListTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 204vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.schindlersListPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 208.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.theGodfatherPartIITitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 242vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.theGodfatherPartIIPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 246.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.theGodfatherTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 280vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.theGodfatherPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 284.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.theShawshankRedemptionTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 318vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.theShawshankRedemptionPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 322.5vw;
+text-align: center;
+z-index: 950;
+}
+
+.savingPrivateRyanTitle {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 356vw;
+width: 100%;
+height: auto;
+text-align: center;
+z-index: 950;
+font-size: 1.25vw;
+font-family: Verdana;
+color: white;
+}
+
+.savingPrivateRyanPicture {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0px;
+right: 0px;
+top: 360.5vw;
+text-align: center;
+z-index: 950;
+}
+
+</style>
+</head>
+
+<body style="background-color:#000000;">
+
+<img src="https://wallpaperaccess.com/full/1429587.jpg" style="position:fixed; left:0px; right:0px; top:0px; width:100%; height:6vw; z-index:1000;" alt="Running Banner;">
+
+<div class="websiteLogo">
+<p><a href="https://www.dropbox.com/s/7uwaxrq2dajqsao/Home-Page%20copy.html?dl=0">
+<img src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png' onmouseover="this.src='https://i.ibb.co/ctNphh2/HTML-Webpage-Logo-Inverted.png';" onmouseout="this.src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png';" alt="HTML Webpage Logo;" style="position:fixed; left:0.7vw; right:0px; top:-0.3vw; width:auto; height:6.7vw; z-index:1005;">
+</a></p>
+</div>
+
+
+<div class="athletesBanner">
+<p><a href="https://www.dropbox.com/s/injw9j37cgt083i/Atheltes%20copy.html?dl=0">Athletes</a></p>
+</div>
+
+<div class="moviesBanner">
+	<p><a href="https://www.dropbox.com/s/iko7fbfcnxnaas3/Movies%20copy.html?dl=0">Movies</a></p>
+</div>
+
+<div class="citiesBanner">
+	<p><a href="https://www.dropbox.com/s/3bl2ex36wnueebd/Cities%20copy.html?dl=0">Cities</a></p>
+</div>
+
+<div class="animalsBanner">
+	<p><a href="https://www.dropbox.com/s/5q149uyp017789d/Animals%20copy.html?dl=0">Animals</a></p>
+</div>
+
+<h1>The Top 10 Movies of All-Time</h1>
+
+
+<div class="hacksawRidgeTitle">
+<h3>10. Hacksaw Ridge</h3>
+</div>
+
+
+<div class="hacksawRidgePicture">
+<img src="https://i.guim.co.uk/img/media/a1947cae06680285b31ac98f126bf78e972803c0/0_11_3259_1955/master/3259.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=0c6139ea511f5babc659575acc538cc6" style="height:30vw; width:auto; border-radius: 20%;" alt="Hacksaw Ridge Picture;">
+</div>
+
+
+<div class="greenBookTitle">
+<h3>9. Green Book</h3>
+</div>
+
+<div class="greenBookPicture">
+<img src="https://media.newyorker.com/photos/5bef41f1132d895f517cf95f/2:2/w_1706,h_1706,c_limit/Brody-Green-Book.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="Green Book Picture;">
+</div>
+
+<div class="djangoUnchainedTitle">
+<h3>8. Django Unchained</h3>
+</div>
+
+<div class="djangoUnchainedPicture">
+<img src="https://i.ibb.co/FbgPbhT/Jp-DJANGO-super-Jumbo-v2.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="Django Unchained Picture;">
+</div>
+
+<div class="parasiteTitle">
+<h3>7. Parasite</h3>
+</div>
+
+<div class="parasitePicture">
+<img src="https://i.ibb.co/yskL65w/1423165.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="Parasite Picture;">
+</div>
+
+<div class="interstellarTitle">
+<h3>6. Interstellar</h3>
+</div>
+
+<div class="interstellarPicture">
+<img src="https://i.ibb.co/d0ShWcV/interstellar-2015-pt2.jpg" alt="interstellar-2015-pt2" style="height: 30vw; width: auto; border-radius: 20%;" alt="Interstellar Picture;">
+</div>
+
+<div class="schindlersListTitle">
+<h3>5. Schindler's List</h3>
+</div>
+
+<div class="schindlersListPicture">
+<img src="https://i.guim.co.uk/img/media/c9724099ae63347116a702312830beaca12b277d/0_30_3504_2104/master/3504.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=4f9625a872a13cab1091a78b1453319a" style="height: 30vw; width: auto; border-radius: 20%;" alt="Schindler's List Picture;">
+</div>
+
+<div class="theGodfatherPartIITitle">
+<h3>4. The Godfather Part II</h3>
+</div>
+
+<div class="theGodfatherPartIIPicture">
+<img src="https://i.ibb.co/tx9KSHb/MV5-BMTQy-MDc0-ODY1-OV5-BMl5-Ban-Bn-Xk-Ft-ZTgw-MDI4-Nj-Iw-Mj-E-V1.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="The Godfather Part II Picture;">
+</div>
+
+<div class="theGodfatherTitle">
+<h3>3. The Godfather</h3>
+</div>
+
+<div class="theGodfatherPicture">
+<img src="https://images.theconversation.com/files/448820/original/file-20220228-20-1xn1tw4.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" style="height: 30vw; width: auto; border-radius: 20%;" alt="The Godfather Picture;">
+</div>
+
+<div class="theShawshankRedemptionTitle">
+<h3>2. The Shawshank Redemption</h3>
+</div>
+
+<div class="theShawshankRedemptionPicture">
+<img src="https://i.ibb.co/X21xSML/MV5-BNTYx-OTYy-Mz-E3-NV5-BMl5-Ban-Bn-Xk-Ft-ZTcw-OTMx-NDY3-Mw-V1.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="The Shawshank Redemption Picture;">
+</div>
+
+<div class="savingPrivateRyanTitle">
+<h3>1. Saving Private Ryan</h3>
+</div>
+
+<div class="savingPrivateRyanPicture">
+<img src="https://i.ibb.co/Jt1fkKW/wp2217172.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="Saving Private Ryan Picture;">
+</div>
