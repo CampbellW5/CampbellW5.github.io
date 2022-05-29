@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declaration telling the browser to expect an HTML document. All HTML documents must start with a <!DOCTYPE> declaration -->
 <html>
 <head>
-	<title>Top 10 | Ranked</title>
+	<title>Top 10 | Ranked</title> <!-- Title for website tab -->
 	
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- To add a favicon to the tab. A favicon is the little image on the left of a tab-->
 
-	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0"> <!-- To make the website responsive -->
 
 <style>
+<!-- Classes for the running header text -->
 .athletesBanner {
 position: fixed; 
 margin-left: auto;
@@ -68,21 +69,25 @@ font-size: 1.35vw;
 font-family: Verdana;
 }
 
+<!-- To style a link within the header or footer -->
 a:link, a:visited {
 color: white;
 text-decoration: none;
 }
-	
+
+<!-- When the link within the header or footer is hovered over, the text will turn black -->
 a:hover, a:active {
 color: black;
 text-decoration: none;
 }
-	
+
+<!-- A link within the body will always be white -->
 a.body:link, a.body:visited, a.body:hover, a.body:active {
 color: white;
 text-decoration: none;
 }
 
+<!-- Class for title of the page -->
 h1 {
 position: absolute; 
 margin-left: auto;
@@ -99,6 +104,7 @@ font-family: Verdana;
 color: white;
 }
 
+<!-- Classes for the title and image of each ranking preview -->
 .citiesTitle {
 position: absolute;
 margin-left: auto;
@@ -206,7 +212,8 @@ top: 132.5vw;
 text-align: center;
 z-index: 950;
 }
-	
+
+<!-- A black picture to create space between the last photo and the footer -->
 .spaceFillerBlackPicture {
 position: absolute;
 margin-left: auto;
@@ -217,7 +224,8 @@ top: 166vw;
 text-align: center;
 z-index: 950; 
 }
-	
+
+<!-- The class for the footer -->
 .footer {
 position: fixed;
 margin-left: auto;
@@ -236,18 +244,21 @@ font-family: Verdana;
 </style>
 </head>
 
+<!-- Add a background to body of the page -->
 <body style="background-color:#000000; margin: 0; padding: 0;">
 
+<!-- Add the background for the running header -->
 <img src="https://wallpaperaccess.com/full/1429587.jpg" style="position:fixed; left:0px; right:0px; top:0px; width:100%; height:6vw; z-index:1000;" alt="Running Banner;">
 
 
+<!-- Add the website logo to the running header. When the logo is hovered over, the colours of the original logo will be inverted. For example, black will become white, and vice versa -->
 <div class="websiteLogo">
 <p><a href="index.html">
 <img src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png' onmouseover="this.src='https://i.ibb.co/ctNphh2/HTML-Webpage-Logo-Inverted.png';" onmouseout="this.src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png';" alt="HTML Webpage Logo;" style="position:fixed; left:0.7vw; right:0px; top:-0.3vw; width:auto; height:6.7vw; z-index:1005;">
 </a></p>
 </div>
 
-
+<!-- Add the titles, which are embedded with links to the corresponding page, to the running header -->
 <div class="athletesBanner">
 <p><a href="athletes.html">Athletes</a></p>
 </div>
@@ -264,9 +275,10 @@ font-family: Verdana;
 	<p><a href="animals.html">Animals</a></p>
 </div>
 
+<!-- Add the title of the page -->
 <h1>Welcome to the Website of Rankings</h1>
 
-
+<!-- Add the title and image for each ranking preview. The titles and images are embedded with links to the corresponding ranking page -->
 <div class="citiesTitle">
 <h3><a class="body" href="cities.html">Top 10 Cities of the World</a></h3>
 </div>
@@ -308,11 +320,13 @@ font-family: Verdana;
 <img src="https://i.ibb.co/LdSM45c/movies-Preview-Photo.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="Parasite Picture;">
 </a>
 </div>
-	
+
+<!-- Add the space filling black picture between the last photo and the footer -->
 <div class="spaceFillerBlackPicture">
 <img src="https://i.ibb.co/hF5JL7h/black-Filler-Picture.jpg" style="height: 4.5vw; width: 100%; alt="Black Filler Picture;">
 </div>
 
+<!-- Add the footer. Within the footer, a link to an opinion poll on the rankings is embedded within the words "responding to the opinion poll" -->															   
 <div class="footer">
 <p>Tell us how we did by <a href="https://www.surveymonkey.com/r/XY9GFDK" target="_blank">responding to the opinion poll</a></p>
 </div>
