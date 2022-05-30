@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declaration telling the browser to expect an HTML document. All HTML documents must start with a <!DOCTYPE> declaration -->
 <html>
 <head>
-	<title>Top 10 Cities of the World</title>
+	<title>Top 10 Cities of the World</title> <!-- Create the title of the tab -->
 
-	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0"> <!-- Add to make the website responsive to the size of the viewport -->
 
 <style>
+/* Create classes for the text on the running header */
 .athletesBanner {
 position: fixed; 
 margin-left: auto;
@@ -66,21 +67,25 @@ font-size: 1.35vw;
 font-family: Verdana;
 }
 
+/* Change the appearance of links in the header and footer */
 a:link, a:visited {
 color: white;
 text-decoration: none;
 }
 
+/* If the link in the header or footer is hovered over, the text will turn black. This makes the website more immersive */
 a:hover, a:active {
 color: black;
 text-decoration: none;
 }
-	
+
+/* A link in the body of the page will always be white. Specifying the text decoration as none will remove the underline from the embedded text */
 a.body:link, a.body:visited, a.body:hover, a.body:active {
 color: white;
 text-decoration: none;
 }
 
+/* Create a class for the page title */
 h1 {
 position: absolute; 
 margin-left: auto;
@@ -97,6 +102,7 @@ font-family: Verdana;
 color: white;
 }
 
+/* Create classes for the title and picture that accompanies each ranking */
 .veniceTitle {
 position: absolute;
 margin-left: auto;
@@ -366,7 +372,8 @@ top: 360.5vw;
 text-align: center;
 z-index: 950;
 }
-	
+
+/* Create a class for the space filling black picture that will create space between the last picture and the footer */
 .spaceFillerBlackPicture {
 position: absolute;
 margin-left: auto;
@@ -377,7 +384,8 @@ top: 394vw;
 text-align: center;
 z-index: 950; 
 }
-	
+
+/* Create a class for the footer */
 .footer {
 position: fixed;
 margin-left: auto;
@@ -395,18 +403,21 @@ font-family: Verdana;
 </style>
 </head>
 
+<!-- Add a black background to the body of the page -->
 <body style="background-color:#000000;">
 
+<!-- Add a dark red background to the running header -->
 <img src="https://wallpaperaccess.com/full/1429587.jpg" style="position:fixed; left:0px; right:0px; top:0px; width:100%; height:6vw; z-index:1000;" alt="Running Banner;">
 
 
+<!-- Add the website logo to the left side of the running header. When the logo is hovered over, the colours of the logo will be inverted -->
 <div class="websiteLogo">
 <p><a href="index.html">
 <img src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png' onmouseover="this.src='https://i.ibb.co/ctNphh2/HTML-Webpage-Logo-Inverted.png';" onmouseout="this.src='https://i.ibb.co/9N2VQdr/HTML-Website-Logo.png';" alt="HTML Webpage Logo;" style="position:fixed; left:0.7vw; right:0px; top:-0.3vw; width:auto; height:6.7vw; z-index:1005;">
 </a></p>
 </div>
 
-
+<!-- Add the four rankings to the running header. The text for each ranking includes a link to the corresponding rankings page -->
 <div class="athletesBanner">
 <p><a href="athletes.html">Athletes</a></p>
 </div>
@@ -423,9 +434,10 @@ font-family: Verdana;
 	<p><a href="animals.html">Animals</a></p>
 </div>
 
+<!-- Add the title of the rankings page -->
 <h1>The Top 10 Cities of the World</h1>
 
-
+<!-- Add the title and image for each ranking. The title of each ranking includes a link to an external resource that provides additional information -->
 <div class="veniceTitle">
 <h3><a class="body" href="https://www.britannica.com/place/Venice" target="_blank">10. Venice</a></h3>
 </div>
@@ -507,11 +519,13 @@ font-family: Verdana;
 <div class="londonPicture">
 <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg" style="height: 30vw; width: auto; border-radius: 20%;" alt="London Picture;">
 </div>
-	
+
+<!-- Add the space filling black picture that creates space between the last photo and the footer -->
 <div class="spaceFillerBlackPicture">
 <img src="https://i.ibb.co/hF5JL7h/black-Filler-Picture.jpg" style="height: 4.5vw; width: 100%; alt="Black Filler Picture;">
 </div>
 
+<!-- Add the footer to the page. A link to an opinion poll on the rankings is embedded in the words "responding to the opinion poll" -->
 <div class="footer">
 <p>Tell us how we did by <a href="https://www.surveymonkey.com/r/XY9GFDK" target="_blank">responding to the opinion poll</a></p>
 </div>
